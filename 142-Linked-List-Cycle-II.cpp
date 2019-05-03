@@ -15,7 +15,7 @@ public:
     Runner() : time_count(0) {}
 
     bool hasNext() { return this->current->next == NULL ? false : true; }
-    
+
     void Step() {
         this->time_count += 1;
         if (this->time_count >= this->start_time) {
@@ -54,12 +54,12 @@ public:
     }
 };
 
-# Sample Testcase:
-#   Input:
-#     head object of a linked list(1:3 -> 2:2 -> 3:0 -> 4:-4 -> 2:2 -> ...)
-#   Output:
-#     loop head node object
+// Sample Testcase:
+//   Input:
+//     head object of a linked list(1:3 -> 2:2 -> 3:0 -> 4:-4 -> 2:2 -> ...)
+//   Output:
+//     loop head node object
 
-# Performance Result:
-#   Runtime: 1248 ms, faster than 5.65% of C++ online submissions for Linked List Cycle II.
-#   Memory Usage: 10.1 MB, less than 19.38% of C++ online submissions for Linked List Cycle II.
+// Performance Result:
+//   Runtime: 1248 ms, faster than 5.65% of C++ online submissions for Linked List Cycle II.
+//   Memory Usage: 10.1 MB, less than 19.38% of C++ online submissions for Linked List Cycle II.
