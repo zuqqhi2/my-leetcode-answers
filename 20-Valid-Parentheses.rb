@@ -43,3 +43,13 @@ def is_valid(s)
         return true
     end
 end
+
+# Sample Testcase:
+#   Input:
+#     "{[]}"
+#   Output:
+#     true
+
+# Performance Result:
+#   Runtime: 40 ms, faster than 65.17% of Ruby online submissions for Valid Parentheses.
+#   Memory Usage: 9.5 MB, less than 34.61% of Ruby online submissions for Valid Parentheses.
