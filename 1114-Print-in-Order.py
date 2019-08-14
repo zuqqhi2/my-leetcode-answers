@@ -1,18 +1,17 @@
 import time
 
+
 class Foo:
     def __init__(self):
         self.firstFlg = False
         self.secondFlg = False
         self.sleepTime = 0.01
 
-
     def first(self, printFirst: 'Callable[[], None]') -> None:
         # printFirst() outputs "first". Do not change or remove this line.
         printFirst()
 
         self.firstFlg = True
-
 
     def second(self, printSecond: 'Callable[[], None]') -> None:
         while not self.firstFlg:
@@ -22,7 +21,6 @@ class Foo:
         printSecond()
 
         self.secondFlg = True
-
 
     def third(self, printThird: 'Callable[[], None]') -> None:
         while not self.secondFlg:
