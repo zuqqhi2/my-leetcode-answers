@@ -1,3 +1,5 @@
+package main
+
 import "fmt"
 
 // Time Complexity : O(n)
