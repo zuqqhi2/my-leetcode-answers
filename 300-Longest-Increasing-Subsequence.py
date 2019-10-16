@@ -24,7 +24,7 @@ class Solution:
 #       4
 
 # Performance Result:
-#   Coding Time: 00:28:51
+#   Coding Time: 01:03:00
 #   Time Complexity: O(n^2)
 #   Space Complexity: O(n)
 #   Runtime: 992 ms, faster than 52.27% of Python3
