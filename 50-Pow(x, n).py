@@ -28,8 +28,8 @@ class Solution:
 
 # Performance Result:
 #   Coding Time: 00:11:24
-#   Time Complexity: O(n)
-#   Space Complexity: O(n)
+#   Time Complexity: O(log n)
+#   Space Complexity: O(1)
 #   Runtime: 40 ms, faster than 40.27% of Python3
 #       online submissions for Pow(x, n).
 #   Memory Usage: 13.8 MB, less than 6.90% of Python3
