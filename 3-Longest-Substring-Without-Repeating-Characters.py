@@ -2,6 +2,7 @@
 #   length + 1 if str[i] is not in existed char hash
 #   clear the length and hash if str[i] is in existed char hash
 
+
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
         if len(s) == 0:
