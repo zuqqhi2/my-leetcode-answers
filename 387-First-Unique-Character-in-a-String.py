@@ -16,9 +16,9 @@ class Solution:
 
 # Sample test case:
 #   Input:
-#       ["test.email+alex@leetcode.com","test.e.mail+bob.cathy@leetcode.com","testemail+david@lee.tcode.com"]
+#       "leetcode"
 #   Output:
-#       2
+#       0
 
 # Performance Result:
 #   Coding Time: 00:03:02
