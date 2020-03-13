@@ -1,7 +1,7 @@
 class Solution:
     def missingNumber(self, nums) -> int:
         """
-        :type List[int]
+        :param List[int] nums: input value
         """
         nums.sort()
         for i in range(len(nums)):
@@ -10,6 +10,9 @@ class Solution:
 
         return nums[-1] + 1
 
+
+s = Solution()
+print(s.missingNumber([3, 0, 1]))
 
 # Sample test case:
 #   Input:
