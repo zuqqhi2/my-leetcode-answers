@@ -24,9 +24,9 @@ print(s.climbStairs(3))
 
 # Sample test case:
 #   Input:
-#       [3,0,1]
+#       3
 #   Output:
-#       2
+#       3
 
 # Performance Result:
 #   Coding Time: 00:06:19
