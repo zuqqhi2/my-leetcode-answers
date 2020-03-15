@@ -54,8 +54,8 @@ class Solution:
 
 # Performance Result:
 #   Coding Time: 00:47:09
-#   Time Complexity: O(N^2)
-#   Space Complexity: O(N^2)
+#   Time Complexity: O(2|E| + |V|)
+#   Space Complexity: O(|E| + 4|V|)
 #   Runtime: 1332 ms, faster than 5.00% of Python3
 #       online submissions for Course Schedule.
 #   Memory Usage: 14.5 MB, less than 65.31% of Python3
