@@ -35,7 +35,7 @@ var detectCycle = function(head) {
 };
 
 // Performance Result:
-//  Coding Time: 00:21:05K
+//  Coding Time: 00:21:05
 //  Time Complexity: O(N)
 //  Space Complexity: O(N)
 //  Runtime: 72 ms, faster than 45.71% of JavaScript online submissions for Linked List Cycle II.
