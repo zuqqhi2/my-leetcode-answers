@@ -49,15 +49,9 @@ print(s.validTree(5, [[0,1], [1,2], [2,3], [1,3], [1,4]]))
 
 # Sample test case:
 #   Input:
-#       [
-#           "wrt",
-#           "wrf",
-#           "er",
-#           "ett",
-#           "rftt"
-#       ]
+#       n = 5, and edges = [[0,1], [0,2], [0,3], [1,4]]
 #   Output:
-#       "wertf"
+#       true
 
 # Performance Result:
 #   Coding Time: -
