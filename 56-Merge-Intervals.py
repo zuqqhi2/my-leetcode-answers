@@ -33,7 +33,7 @@ class Solution:
 
 # Performance Result:
 #   Coding Time: 00:08:38
-#   Time Complexity: O(N)
-#   Space Complexity: O(N)
+#   Time Complexity: O(N log N)
+#   Space Complexity: O(1)
 #   Runtime: 100 ms, faster than 20.38% of Python3 online submissions for Merge Intervals.
 #   Memory Usage: 14.6 MB, less than 6.52% of Python3 online submissions for Merge Intervals.
