@@ -59,5 +59,7 @@ class Solution:
 #   Coding Time: 00:20:50
 #   Time Complexity: O(N)
 #   Space Complexity: O(1)
-#   Runtime: 32 ms, faster than 74.45% of Python3 online submissions for Rotate Image.
-#   Memory Usage: 13.7 MB, less than 6.25% of Python3 online submissions for Rotate Image.
+#   Runtime: 32 ms, faster than 74.45% of Python3
+#       online submissions for Rotate Image.
+#   Memory Usage: 13.7 MB, less than 6.25% of Python3
+#       online submissions for Rotate Image.
