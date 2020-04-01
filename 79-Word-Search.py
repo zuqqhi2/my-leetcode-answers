@@ -54,8 +54,8 @@ class Solution:
 
 # Performance Result:
 #   Coding Time: 00:20:02
-#   Time Complexity: O(N^2)
-#   Space Complexity: O(N)
+#   Time Complexity: O(N * 4^L)
+#   Space Complexity: O(L)
 #   Runtime: 452 ms, faster than 16.99% of Python3
 #       online submissions for Word Search.
 #   Memory Usage: 28.3 MB, less than 6.38% of Python3
