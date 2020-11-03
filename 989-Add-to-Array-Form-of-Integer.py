@@ -1,3 +1,6 @@
+from typing import List
+
+
 class Solution:
     def addToArrayForm(self, A: List[int], K: int) -> List[int]:
         res_str = str(int(''.join([str(A[i]) for i in range(len(A))]), 10) + K)

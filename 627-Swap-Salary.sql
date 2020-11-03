@@ -7,4 +7,3 @@ UPDATE salary SET sex = IF(sex = 'm', 'f', 'm');
 --   Space Complexity: O(1)
 --   Runtime: 231 ms, faster than 53.26%
 --   Memory Usage: 0B, less than 100.00%
-    
