@@ -1,0 +1,23 @@
+SELECT
+    u.name,
+    t.balance
+FROM
+    Users u
+INNER JOIN (
+    SELECT
+        account,
+        SUM(amount) AS balance
+    FROM
+        Transactions
+    GROUP BY
+        account
+) t
+ON (u.account = t.account)
+WHERE
+    t.balance > 10000;
+
+
+-- Performance Result:
+--   Coding Time: 00:03:24
+--   Runtime: 566 ms, faster than 58.63%
+--   Memory Usage: 0B, less than 100.00%
