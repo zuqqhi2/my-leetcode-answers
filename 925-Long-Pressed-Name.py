@@ -1,6 +1,3 @@
-import collections
-
-
 class Solution:
     def isLongPressedName(self, name: str, typed: str) -> bool:
         name_idx = 0
@@ -22,4 +19,4 @@ class Solution:
 #   Time Complexity: O(N)
 #   Space Complexity: O(1)
 #   Runtime: 32 ms, faster than 66.22%
-#   Memory Usage: 14.3 MB, less than 32.89%
+#   Memory Usage: 14.2 MB, less than 84.83%
