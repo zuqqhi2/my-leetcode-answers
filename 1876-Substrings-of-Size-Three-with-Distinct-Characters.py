@@ -18,8 +18,8 @@ class Solution:
 
 
 # Performance Result:
-#   Coding Time: 00:10:01
-#   Time Complexity: O(N log2 N)
-#   Space Complexity: O(1)
+#   Coding Time: 00:12:05
+#   Time Complexity: O(N)
+#   Space Complexity: O(N)
 #   Runtime: 64 ms, faster than 83.54%
 #   Memory Usage: 13.9 MB, less than 81.15%
