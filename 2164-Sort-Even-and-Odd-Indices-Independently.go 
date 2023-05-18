@@ -1,0 +1,31 @@
+func sortEvenOdd(nums []int) []int {
+    oddNums := []int{}
+    evenNums := []int{}
+    for i, v := range nums {
+        if i % 2 != 0 {
+            oddNums = append(oddNums, v)
+        } else {
+            evenNums = append(evenNums, v)
+        }
+    }
+
+    sort.Slice(oddNums, func(i, j int) bool { return oddNums[i] > oddNums[j] })
+    sort.Slice(evenNums, func(i, j int) bool { return evenNums[i] < evenNums[j] })
+
+    for i := 0; i < len(nums); i++ {
+        if i % 2 != 0 {
+            nums[i] = oddNums[(i - 1) / 2]
+        } else {
+            nums[i] = evenNums[i / 2]
+        }
+    }
+
+    return nums
+}
+
+// Performance Result:
+//   Coding Time: 00:16:52
+//   Time Complexity: O(n log n)
+//   Space Complexity: O(n)
+//   Runtime: 7 ms, faster than 29.41%
+//   Memory Usage: 3.3 MB, less than 52.94%
