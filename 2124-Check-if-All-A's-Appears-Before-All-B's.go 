@@ -1,0 +1,40 @@
+func Max(a int, b int) int {
+    if a >= b {
+        return a
+    } else {
+        return b
+    }
+}
+
+func Min(a int, b int) int {
+    if a <= b {
+        return a
+    } else {
+        return b
+    }
+}
+
+func checkString(s string) bool {
+    lastAPos := -1
+    firstBPos := 1000
+    for i := 0; i < len(s); i++ {
+        if s[i] == 'a' {
+            lastAPos = Max(lastAPos, i)
+        } else {
+            firstBPos = Min(firstBPos, i)
+        }
+    }
+
+    if lastAPos > firstBPos {
+        return false
+    } else {
+        return true
+    }
+}
+
+// Performance Result:
+//   Coding Time: 00:10:16
+//   Time Complexity: O(n)
+//   Space Complexity: O(1)
+//   Runtime: 0 ms, faster than 100%
+//   Memory Usage: 2 MB, less than 91.30%
