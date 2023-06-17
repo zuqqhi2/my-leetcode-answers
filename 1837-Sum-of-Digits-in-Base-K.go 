@@ -1,0 +1,17 @@
+func sumBase(n int, k int) int {
+    res := 0
+    for n > 1 {
+        res = res + n % k
+        n = n / k
+    }
+    res = res + n
+
+    return res
+}
+
+// Performance Result:
+//   Coding Time: 00:08:32
+//   Time Complexity: O(n)
+//   Space Complexity: O(1)
+//   Runtime: 0 ms, faster than 100%
+//   Memory Usage: 1.9 MB, less than 100%
