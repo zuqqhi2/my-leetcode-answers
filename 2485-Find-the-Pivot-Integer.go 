@@ -1,0 +1,24 @@
+func pivotInteger(n int) int {
+    accArr := make([]int, n)
+    acc := 0
+    for i := 1; i <= n; i++ {
+        acc += i
+        accArr[i - 1] = acc
+    }
+
+    for i := 1; i <= n; i++ {
+        if accArr[i - 1] == accArr[len(accArr) - 1] - accArr[i - 1] + i {
+            return i
+        }
+    }
+
+    return -1
+}
+
+
+// Performance Result:
+//   Coding Time: 00:08:18
+//   Time Complexity: O(n)
+//   Space Complexity: O(n)
+//   Runtime: 3 ms, faster than 24.53%
+//   Memory Usage: 3.66 MB, less than 80.19%
