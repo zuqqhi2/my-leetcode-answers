@@ -1,0 +1,35 @@
+func deleteGreatestValue(grid [][]int) int {
+    m := len(grid[0])
+    res := 0
+    for k := 0; k < m; k++ {
+        globalMax := 0
+        for _, elem := range grid {
+            localMax := 0
+            localArgMax := -1
+            for x, v := range elem {
+                if v > localMax {
+                    localMax = v
+                    localArgMax = x
+                }
+
+                if v > globalMax {
+                    globalMax = v
+                }
+            }
+
+            elem[localArgMax] = 0
+        }
+
+        res = res + globalMax
+    }
+
+    return res
+}
+
+
+// Performance Result:
+//   Coding Time: 00:12:46
+//   Time Complexity: O(mn)
+//   Space Complexity: O(1)
+//   Runtime: 8 ms, faster than 100.00%
+//   Memory Usage: 4.70 MB, less than 100.00%
