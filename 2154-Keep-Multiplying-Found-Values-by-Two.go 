@@ -1,0 +1,18 @@
+func findFinalValue(nums []int, original int) int {
+    sort.Ints(nums)
+    for _, v := range nums {
+        if original == v {
+            original = original * 2
+        }
+    }
+
+    return original
+}
+
+
+// Performance Result:
+//   Coding Time: 00:03:45
+//   Time Complexity: O(n log n)
+//   Space Complexity: O(1)
+//   Runtime: 8 ms, faster than 51.22%
+//   Memory Usage: 3.35 MB, less than 95.12%
