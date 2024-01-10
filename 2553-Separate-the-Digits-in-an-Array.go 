@@ -1,0 +1,31 @@
+func splitNumToDigits(num int, res []int) []int {
+    if num >= 10 {
+        dividedNum := num / 10
+        digits := splitNumToDigits(dividedNum, res)
+        res = append(res, digits...)
+        res = append(res, num % 10)
+    } else {
+        res = append(res, num)
+    }
+
+    return res
+}
+
+func separateDigits(nums []int) []int {
+    res := make([]int, 0, 10000)
+    for _, v := range nums {
+        digits := make([]int, 0, 6)
+        digits = splitNumToDigits(v, digits)
+        res = append(res, digits...)
+    }
+
+    return res
+}
+
+
+// Performance Result:
+//   Coding Time: 00:19:09
+//   Time Complexity: O(n)
+//   Space Complexity: O(n)
+//   Runtime: 3 ms, faster than 88.00%
+//   Memory Usage: 4.84 MB, less than 97.33%
